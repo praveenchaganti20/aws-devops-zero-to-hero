@@ -1,7 +1,7 @@
 # Route53
 
 
-It seems like there might be a typo in your query. It's possible you meant "AWS Route 53" instead of "Route 63". AWS Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service provided by Amazon Web Services. Here's some information you can share in an interview about AWS Route 53:
+. AWS Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service provided by Amazon Web Services. Here's some information you can share in an interview about AWS Route 53:
 
 DNS Service: Route 53 is primarily a DNS service. It translates domain names like www.example.com into IP addresses like 192.0.2.1.
 
