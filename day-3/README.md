@@ -131,3 +131,21 @@ Differentiating between On-Demand, Reserved, and Spot instances.
 - Starting, stopping, and terminating instances.
 - Monitoring instance performance and utilization.
 - Basic troubleshooting and accessing instances using SSH (Secure Shell).
+
+- Amazon EC2 (Elastic Compute Cloud) is one of the core services offered by Amazon Web Services (AWS). It provides resizable compute capacity in the cloud, allowing users to run virtual machines, known as instances, to host their applications or workloads. Here's a rundown of its features:
+
+Scalability: EC2 allows you to scale your compute capacity up or down based on your application requirements. You can easily add or remove instances as needed, helping you to manage fluctuating workloads efficiently.
+
+Variety of Instance Types: EC2 offers a wide range of instance types optimized for different use cases, such as compute-optimized, memory-optimized, storage-optimized, and GPU instances. This allows you to choose the instance type that best suits your application's requirements in terms of CPU, memory, storage, and networking resources.
+
+Pay-As-You-Go Pricing: With EC2, you pay only for the compute capacity that you use, on an hourly or per-second basis, depending on the instance type. This pay-as-you-go pricing model helps you optimize costs by scaling your infrastructure according to demand.
+
+Flexibility: EC2 provides flexibility in terms of operating systems, networking configurations, security settings, and storage options. You can choose from a variety of operating systems, including Amazon Linux, Ubuntu, Windows Server, and others, and customize your instances to meet your specific requirements.
+
+Integration with Other AWS Services: EC2 integrates seamlessly with other AWS services, such as Amazon S3 (Simple Storage Service), Amazon RDS (Relational Database Service), Amazon VPC (Virtual Private Cloud), and AWS IAM (Identity and Access Management), enabling you to build complex, scalable, and secure applications.
+
+Elastic Load Balancing and Auto Scaling: EC2 works in conjunction with Elastic Load Balancing (ELB) and Auto Scaling to distribute incoming traffic across multiple instances and automatically adjust the number of instances based on demand. This ensures high availability, fault tolerance, and optimal performance for your applications.
+
+Security: EC2 provides several security features, including security groups, network access control lists (ACLs), and key pairs, to help you secure your instances and data. You can control access to your instances by defining rules that govern inbound and outbound traffic, and you can encrypt data at rest and in transit using various encryption options.
+
+Overall, Amazon EC2 is a powerful and versatile service that allows you to deploy and manage virtual servers in the cloud with ease, providing the flexibility, scalability, and reliability needed to run a wide range of applications and workloads.
