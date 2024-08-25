@@ -9,6 +9,35 @@ In this example, we'll create a Lambda function that identifies EBS snapshots th
 The Lambda function fetches all EBS snapshots owned by the same account ('self') and also retrieves a list of active EC2 instances (running and stopped). For each snapshot, it checks if the associated volume (if exists) is not associated with any active instance. If it finds a stale snapshot, it deletes it, effectively optimizing storage costs.
 
 
+Example of Cost Optimization with AWS Lambda and EBS Snapshots
+Scenario:
+
+A company has numerous Amazon EBS snapshots created for backups and disaster recovery purposes. Over time, many of these snapshots are no longer needed because they are associated with volumes that are either deleted or no longer attached to any active EC2 instances. These unused snapshots are still incurring storage costs, which adds up over time.
+
+Solution:
+
+The company deploys an AWS Lambda function to automate the process of identifying and deleting these stale EBS snapshots. Here's how the process works:
+
+Lambda Function Execution:
+
+The Lambda function is triggered periodically (e.g., once a day or week) using Amazon CloudWatch Events.
+The function fetches all EBS snapshots owned by the account.
+It also retrieves a list of active EC2 instances, including those that are running or stopped.
+Identifying Stale Snapshots:
+
+For each snapshot, the Lambda function checks if the snapshot is associated with a volume.
+It then verifies if the associated volume is still attached to any of the active EC2 instances.
+If a snapshot is found to be "stale" (i.e., the associated volume is not attached to any active instance), it is marked for deletion.
+Snapshot Deletion:
+
+The Lambda function deletes the identified stale snapshots.
+This action directly reduces the storage costs since the company no longer pays for storing unnecessary EBS snapshots.
+Result:
+
+By automating the deletion of stale EBS snapshots, the company significantly reduces its AWS storage costs. The Lambda function ensures that only necessary snapshots are retained, optimizing storage utilization without manual intervention. This approach not only saves costs but also helps in maintaining a clean and efficient cloud environment.
+
+
+
 
 AWS Cloud Cost Optimization is the process of reducing unnecessary cloud expenditures while maintaining performance, availability, and functionality. It involves analyzing and managing various aspects of your AWS environment to ensure that resources are used efficiently, leading to cost savings. Cost optimization is essential because it helps businesses manage their cloud spending effectively, avoid overprovisioning, and leverage the flexibility of AWS services to pay only for what they need.
 
